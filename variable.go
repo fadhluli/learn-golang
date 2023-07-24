@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	var name string
-
 	name = "affad"
 	fmt.Println(name)
 	name = "Irsyad"
@@ -21,4 +20,9 @@ func main() {
 	)
 	fmt.Println(firstName)
 	fmt.Println(lastName)
+
+	const (
+		nickName = "affad"
+		address  = "Jakarta"
+	)
 }
