@@ -3,14 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	var (
-		firstName = "Fadhlul"
-		lastName  = "Irsyad"
-	)
-	address := "Jakarta Barat"
 
-	sayHello := "Hello nama saya " + firstName + " " + lastName + " saya tinggal di " + address
+	person := map[string]string{
+		"name": "affad",
+	}
 
-	fmt.Println(sayHello)
+	books := [...]string{
+		"harry potter",
+		"jumanji",
+		"game of thrones",
+	}
 
+	fmt.Println(person)
+	fmt.Println(books)
 }

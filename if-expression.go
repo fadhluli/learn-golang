@@ -8,6 +8,7 @@ func main() {
 
 	if name == "affad" {
 		fmt.Println("Hello", name)
+
 	} else {
 		fmt.Println("Hi, boleh kenalan?")
 	}
