@@ -2,16 +2,24 @@ package main
 
 import "fmt"
 
-func factorialLoop(value int) int {
+func factorialLoop(value int) (int, int) {
 	result := 1
 
-	for i := value; i > 0; i++ {
+	for i := value; i > 0; i-- {
 		result *= i
 	}
 
-	return result
+	return result, 10
+}
+
+func factorialRecursive(value int) int {
+	if value == 1 {
+		return 1
+	}
+	return value * factorialRecursive(value-1)
 }
 
 func main() {
-	fmt.Println(factorialLoop(4))
+	loop, i := factorialLoop(10)
+	fmt.Println(loop, i)
 }
