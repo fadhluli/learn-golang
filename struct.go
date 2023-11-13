@@ -7,6 +7,7 @@ type Customer struct {
 	Age           int
 }
 
+// struct method
 func (customer Customer) sayHello(name string) {
 	fmt.Println("Hello", name, "My name is", customer.Name)
 }

@@ -2,15 +2,16 @@ package main
 
 import "fmt"
 
+type Persond struct {
+	Name, Gender string
+}
+
 func main() {
-	var (
-		firstName = "Fadhlul"
-		lastName  = "Irsyad"
-	)
-	address := "Jakarta Barat"
+	person1 := Persond{"Fadhlul", "L"}
+	//var person2 *Persond = &person1 //cara manual
+	person2 := &person1
 
-	sayHello := "Hello nama saya " + firstName + " " + lastName + " saya tinggal di " + address
-
-	fmt.Println(sayHello)
+	fmt.Println(person1)
+	fmt.Println(person2)
 
 }
